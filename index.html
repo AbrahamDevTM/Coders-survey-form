@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders survey form - FCC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1 id="title">Coders survey Form</h1>
+    <p id="description">Thank you for taking the time to check my website</p>
+    <form action="" id="survey-form">
+    <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+    <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+    <label id="number-label">Age(optional)<input id="number" type="number" placeholder="Your age" min="13" max="120" required></label>
+    <label>What option best describes your current role?
+        <select name="role" id="dropdown">
+            <option value="">select a role</option>
+            <option value="1">Student</option>
+            <option value="2">Part-Timer</option>
+            <option value="3">Full-Timer</option>
+        </select>
+    </label>
+    <label for="opinion">Would you recommend this to a friend?</label>
+    <label><input class="inline" name="opinion" type="radio" value="defi">Definitely</label>
+    <label><input class="inline" name="opinion" type="radio" value="maybe">Maybe</label>
+    <label><input class="inline" name="opinion" type="radio" value="not">Not sure</label>
+    <label>What do you like the most about coding?
+        <select name="favourite">
+            <option value="">select an option</option>
+            <option value="1">Open-source Projects</option>
+            <option value="2">Front-End Libaries</option>
+            <option value="3">Back-End Libaries</option>
+            <option value="4">Everything</option>
+        </select>
+    </label>
+    <label for="code">Pick the codes do you like the most?</label>
+    <label name="code"><input class="inline" type="checkbox" value="html">HTML</label>
+    <label name="code"><input class="inline" type="checkbox" value="css">CSS</label>
+    <label name="code"><input class="inline" type="checkbox" value="js">Javascript</label>
+    <label name="code"><input class="inline" type="checkbox" value="py">Python</label>
+    <label name="code"><input class="inline" type="checkbox" value="ruby">Ruby</label>
+    <label name="code"><input class="inline" type="checkbox" value="c#">C#</label>
+    <label name="code"><input class="inline" type="checkbox" value="c++">C++</label>
+    <label name="code"><input class="inline" type="checkbox" value="other">Other Codes</label>
+    <label>Tell us a bit about yourself
+        <textarea name="bio" cols="30" rows="3" placeholder="i'm blue Eyed lion and i love coding & music..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
